@@ -26,7 +26,7 @@ function error_404() {
 }
 
 function error_500() {
-    header($_SERVER["SERVER_PROTOCOL"] . " 500 Internal Server Error");
+  header($_SERVER["SERVER_PROTOCOL"] . " 500 Internal Server Error");
   exit();
 }
 
@@ -42,5 +42,6 @@ function is_post_request() {
 function is_get_request() {
   return $_SERVER['REQUEST_METHOD'] == 'GET';
 }
+
 
 ?>
